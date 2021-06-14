@@ -1,0 +1,78 @@
+body {
+    padding: 20px;
+    height: 290vh;
+    background: url("cricketbg.jpg") no-repeat center;
+    background-size: cover;
+    position: relative;
+    overflow-x: hidden;
+  }
+  
+  .intro {
+    padding: 40px;
+  }
+  
+  .container {
+    max-width: 1200px;
+    width: 90%;
+    margin: 0 auto;
+    text-align: center;
+  }
+  
+  .intro h1 {
+    font-size: 3.5rem;
+  }
+  
+  .intro h1 span {
+    font-size: 5rem;
+  }
+  
+  .timeline ul {
+    list-style-type: none;
+    padding: 10px 0;
+  }
+  
+  .timeline ul li {
+    position: relative;
+    width:8px;
+    margin:0 auto;
+    padding-top: 50px;
+    background: navy;
+  }
+  
+  .timeline ul li div {
+    position:relative;
+    bottom: 0;
+    width: 600px;
+    padding: 10px;
+    background: #C70039;
+    color: white;
+  }
+  
+  .timeline ul li:nth-child(odd) div {
+    left: 45px;
+    transform: translate3d(200px, 0, 0);
+  }
+  
+  .timeline ul li:nth-child(even) div {
+    left: -660px;
+    transform: translate3d(-200px, 0, 0);
+  }
+  
+  time {
+    display:block;
+    font-size: 1.2rem;
+    font-weight: bold;
+    margin-bottom: 8px;
+  }
+  
+  .timeline ul li div {
+    visibility: hidden;
+    opacity: 0;
+    transition: all .5s ease-in-out;
+  }
+  
+  .timeline ul li.in-view div {
+    transform: none;
+    visibility: visible;
+    opacity: 1;
+  }
